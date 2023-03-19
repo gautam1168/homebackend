@@ -1,0 +1,10 @@
+# Spacefile Docs: https://go.deta.dev/docs/spacefile/v0
+v: 0
+micros:
+  - name: simapi
+    src: ./simapi
+    engine: nodejs16
+    path: simapi
+    run: "node main.js"
+    public_routes:
+      - "/test"
